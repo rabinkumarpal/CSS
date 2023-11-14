@@ -1,0 +1,18 @@
+<style>
+.bg-image {
+  background-image: url('image-1/one.jpg'), url('image-2/two.jpg'), url('three.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 -1000px, 0 -2000px, 0 -3000px;
+  }
+}
+
+</style>
